@@ -43,7 +43,7 @@ function hireDate3() {
   return n;
 }
 
-//formats variable to 1 decimal place.
+//formats payRate variable to 1 decimal place.
 var payRate1= payRate1a.toFixed(1);
 var payRate2= payRate2a.toFixed(1);
 var payRate3= payRate3a.toFixed(1);
