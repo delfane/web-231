@@ -11,10 +11,11 @@
 
 //creates an array.
 const fruit= ["apple","orange","grape","peach","dragon fruit"];
-function getFruit (a) {
+function getFruit (ary) {
   //cycles through array.
-  fruit.forEach( a => console.log(a));
-
+  for (var i=0; i < ary.length; i++){
+  console.log(ary[i]);
+  }
 }
 
-console.log(getFruit(fruit));
+getFruit(fruit);
