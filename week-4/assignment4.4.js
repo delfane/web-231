@@ -8,9 +8,10 @@
 ; use of arrays and filtering.
 ;===========================================
 */
-
+//created array
 const state = ["iowa", "utah","texas","new york","ohio"];
 
+//matches array
 function getState (ary,a){
   for (var i=0; i < ary.length; i++){
     if (ary[i]===a){
@@ -18,13 +19,13 @@ function getState (ary,a){
     }
   }
 }
-
+//filters array
 let filterState = state.filter(function(e){
   return e === "texas";
 
 });
 
-
+//output
 console.log(state);
 console.log("");
 console.log(state.sort());
