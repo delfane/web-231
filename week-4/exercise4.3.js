@@ -22,6 +22,7 @@ function getValue (ary, a){
     }
   }
   }
+//cycles through the arry and matches
 for (var n=0; n < vehicles.length; n++)
 console.log(vehicles[n]);
 console.log("");
