@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: discussion 5.1
+; Title: discussion 5.2
 ; Author: Tiffany Baker
 ; Date: 6/25/2020
 ; Modified By:
@@ -9,8 +9,10 @@
 ;===========================================
 */
 
-
+//creates array
 let food = ["pizza","tacos","pasta","chicken","mac n cheese"];
+
+//iterate over array
 food.forEach(function(items){console.log(items)});
 
 
