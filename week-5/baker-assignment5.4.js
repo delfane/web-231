@@ -1,8 +1,8 @@
 /*
 ============================================
-; Title: discussion 5.3
+; Title: assignment 5.4
 ; Author: Tiffany Baker
-; Date: 6/25/2020
+; Date: 6/26/2020
 ; Modified By:
 ; Description: This program demonstrates the
 ; use of arrays with the forEach and map function.
