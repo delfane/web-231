@@ -1,58 +1,68 @@
+/*
+============================================
+; Title: exercise 3.2
+; Author: Tiffany Baker
+; Date: 6/25/2020
+; Modified By:
+; Description: This program demonstrates the
+; use of arrays with the forEach and map function.
+;===========================================
+*/
 
+
+//variables
 var c = "1";
 var d = "2";
 var e = "3";
-var f = "4";
+var f = "3";
 var g = "5";
 var h = "6";
 
 
-var word = [d,h,e,g,c,f];
-
-//cycles through each variable.
-
-if (word.length<=6){
-  match(d,d);
-  match(e,h);
-  match(g,c);
-  match(f,f);
-  match(f,h);
-
-}
-
-
-
-//------------------------------------------------
-//function to judge if string match
-
+//creates function called match to compare values
 function match (a,b) {
 
-if (b === a) {
-  console.log("true");
-  return logMatch(a,b);
-} else {
-  console.log("false");
-  return logMismatch(a,b);
+    if (b === a) {
+      return true;
+    } else {
+      return false;
+    }
 }
-}
-
-
 
 
 // gives a message if the variables do not match.
 function logMismatch (a,b) {
-  var misMatch = "Sorry but " + a + " and " + b + " do not match.";
-  console.log(misMatch);
-}
-
+    console.log(a + " and " + b + " do not match!");
+  }
 
 // gives a message if the variables do match.
 function logMatch (a,b) {
-  var doMatch = "Congrats " + a + " and " + b + " do match.";
-  console.log(doMatch);
+    console.log(a + " and " + b + " do match!");
+  }
+
+
+
+  //output
+  console.log(match("a","b"));
+  console.log(match(1,1));
+
+  if (match(c,d)){
+      logMatch(c,d);
+  }else{
+      logMismatch(c,d);
+  }
+
+  if (match(e,f)){
+    logMatch(e,f);
+}else{
+    logMismatch(e,f);
 }
 
-
+if (match(g,h)){
+    logMatch(g,h);
+}else{
+    logMismatch(g,h);
+}
 
 
 
