@@ -5,7 +5,7 @@
 ; Date: 6/25/2020
 ; Modified By:
 ; Description: This program demonstrates the
-; use of arrays with the forEach and map function.
+; use of functions and if else statements.
 ;===========================================
 */
 
