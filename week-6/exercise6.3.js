@@ -4,7 +4,7 @@
 ; Author: Tiffany Baker
 ; Date:7/4/2020
 ; Modified By:
-; Description: this program demonstrates exception handling.
+; Description: this program demonstrates use of object literals
 ;
 ;===========================================
 */
