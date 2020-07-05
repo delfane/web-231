@@ -16,7 +16,7 @@ console.log(header.display("Tiffany", "Baker", "exercise 6.2"));
 
 
 
-
+//code catches the error and outputs a message.
 try{
   //variables
   var a = "10";
@@ -37,4 +37,3 @@ finally{
 }
 
 
-//output

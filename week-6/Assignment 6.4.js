@@ -14,6 +14,7 @@ const header = require('../baker-header.js');
 
 console.log(header.display("Tiffany", "Baker", "Exercise 6.2"));
 
+//created ticket object
 const ticket = {
   id: "582",
   name: "Mark George",
@@ -21,6 +22,7 @@ const ticket = {
   priority: "high"
 }
 
+//created fields object
 const fields = {
   id: "62",
   firstName: "Micheal",
@@ -29,6 +31,8 @@ const fields = {
 
 }
 
+//output
+
 console.log("Ticket "+ ticket.id+" was created on "+ticket.dateCreated+
 " and assigned to employee "+fields.firstName+" "+fields.lastName+" ("+fields.jobTitle+")");
-//ticket (42) was created on (todays date) and assigned to employee (employee name) <(job title)>
+
