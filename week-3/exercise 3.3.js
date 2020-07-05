@@ -5,7 +5,7 @@
 ; Date: 6/25/2020
 ; Modified By:
 ; Description: This program demonstrates the
-; use of functions and if else statements.
+; use of functions and switch statements.
 ;===========================================
 */
 
@@ -47,24 +47,32 @@ function logMatch (a,b) {
   console.log(match(1,1));
 
 
+const choice = e;
+  switch (e) {
+    case c:
+      console.log(logMatch(choice, c));
+      break;
 
-  if (match(c,d)){
-      logMatch(c,d);
-  }else{
-      logMismatch(c,d);
+    case d:
+      console.log(logMatch(choice, d));
+      break;
+
+    case f:
+      console.log(logMatch(choice, f));
+      break;
+
+    case g:
+      console.log(logMatch(choice, g));
+      break;
+
+    case h:
+      console.log(logMatch(choice, h));
+      break;
+
+    default:
+      console.log(logMismatch(choice,));
+      break;
+
+
   }
-
-  if (match(e,f)){
-    logMatch(e,f);
-}else{
-    logMismatch(e,f);
-}
-
-if (match(g,h)){
-    logMatch(g,h);
-}else{
-    logMismatch(g,h);
-}
-
-
 
