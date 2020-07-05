@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: exercise 3.2
+; Title: exercise 3.3
 ; Author: Tiffany Baker
 ; Date: 6/25/2020
 ; Modified By:
@@ -8,6 +8,10 @@
 ; use of functions and switch statements.
 ;===========================================
 */
+
+const header = require('../baker-header.js');
+
+console.log(header.display("Tiffany", "Baker", "exercise 3.3"));
 
 
 //variables
