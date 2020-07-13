@@ -13,7 +13,7 @@
 const header = require('../baker-header.js');
 
 console.log(header.display("Tiffany", "Baker", "assignment"));
-
+console.log("");
 
 //variables
 
