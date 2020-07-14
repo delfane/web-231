@@ -19,3 +19,21 @@ console.log("");
 
 
 //output
+
+//html starter code
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7.4</title>
+
+
+  <link rel="stylesheet" href="C:/Users/TiDel/bu-webdev/web-231/site.css">
+
+</head>
+<body>
+
+</body>
+</html>

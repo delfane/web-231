@@ -1,0 +1,19 @@
+#computer {
+  border: 1px, solid, black;
+
+}
+
+
+#computer th {
+  background-color: blue;
+  color: white;
+  }
+
+  #computer td, #computer th {
+
+    padding: 8px;
+  }
+
+#computer tr:nth-child(odd){background-color: lightblue;}
+
+#computer tr:hover {background-color: #ddd;}
