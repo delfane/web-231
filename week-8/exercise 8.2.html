@@ -1,0 +1,60 @@
+<!--
+============================================
+; Title:exercise 8.2
+; Author: Tiffany Baker
+; Date:07/18/2020
+; Modified By:
+; Description:html page that displays a list.
+;
+;===========================================
+-->
+
+<script>
+const header = require('../baker-header.js');
+
+console.log(header.display("Tiffany", "Baker", "assignment"));
+console.log("");
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic HTML</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="C:/Users/TiDel/bu-webdev/web-231/site.css">
+
+</head>
+<body>
+    <!--top-bar div by Pure CSS-->
+    <div id="top-bar" class="pure-menu pure-menu-horizontal">
+        <a href="#" class="pure-menu-heading pure-menu-link">top-bar</a>
+        <ul class="pure-menu-list">
+
+        </ul>
+    </div>
+
+<div id="fruit"></div>
+
+<script>
+//variable/ array
+var fruits = ['mango','dragon fruit','banana','peach'];
+
+//cycles through array and output to fruit div.
+let index = 1;
+var out = "<h2>Fruit List</h2><ul>";
+for (var x = 0; x < fruits.length; x++) {
+    out += "<li>" + index + ". " + fruits[x] + "</li>";
+    index++
+}
+out += "</ul>";
+
+document.getElementById('fruit').innerHTML = out;
+
+</script>
+
+
+
+</body>
+</html>

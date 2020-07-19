@@ -2,8 +2,6 @@
   border: 1px, solid, black;
 
 }
-
-
 #computer th {
   background-color: blue;
   color: white;
@@ -14,6 +12,23 @@
     padding: 8px;
   }
 
-#computer tr:nth-child(odd){background-color: lightblue;}
+#computer tr:nth-child(odd){background-color: lightblue;
+}
 
-#computer tr:hover {background-color: #ddd;}
+#computer tr:hover {background-color: #ddd;
+}
+
+#fruit{
+  margin: 0 auto;
+  font-family: 'roboto';
+  font-weight: 300, 400, 500;
+}
+
+#fruit ul {
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+#top-bar{
+  background-color: blueviolet;
+}
