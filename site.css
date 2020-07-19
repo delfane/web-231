@@ -32,3 +32,31 @@
 #top-bar{
   background-color: blueviolet;
 }
+
+#fruitList{
+  font-family: 'roboto';
+  font-weight: 300, 400, 500;
+}
+
+#fruitList h1{
+  background-color: plum;
+}
+
+#fruitList th{
+  background-color: lightcoral;
+  color: black;
+}
+
+#fruitList td, th, tr {
+  padding-left: 20px;
+}
+
+#fruitList tr{
+  padding-bottom: 20px;
+}
+
+#fruitList tr:nth-child(odd){background-color: peachpuff;
+}
+
+#FruitList tr:hover {background-color: #ddd;
+}

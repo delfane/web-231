@@ -1,0 +1,113 @@
+<!--
+============================================
+; Title: exercise 8.3
+; Author: Tiffany Baker
+; Date:7/18/2020
+; Modified By:
+; Description: program demonstrates the use of jquery
+; with buttons and tables
+;===========================================
+-->
+
+<script>
+const header = require('../baker-header.js');
+
+console.log(header.display("Tiffany", "Baker", "assignment"));
+console.log("");
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 7.4</title>
+  <link rel="stylesheet" href="C:/Users/TiDel/bu-webdev/web-231/site.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<script>
+//script used to toggle paragraph on and off.
+  $(document).ready(function(){
+  $("#toggle").click(function(){
+    $("p,#title").toggle();
+  });
+});
+</script>
+</head>
+<body>
+
+  <h1 id="title">Ode to who we.</h1>
+  <p>Etiam posuere congue tellus.
+    Nunc est ex, bibendum pulvinar sapien sit amet,
+    maximus auctor odio. Aenean nec nisi sed est
+    scelerisque suscipit. Morbi sollicitudin consectetur
+    turpis. Donec id ipsum rutrum, hendrerit enim sed,
+    facilisis leo. Integer efficitur ex mauris, a vestibulum
+    sapien luctus ut. Quisque mattis vitae odio in rhoncus.
+
+  </p>
+
+  <!--button used to toggle paragraph-->
+  <button id="toggle">press</button>
+
+
+
+<div id="fruitList"></div>
+
+  <script>
+//created basic table
+
+  document.getElementById("fruitList").innerHTML="<h1>Fruit List</h1>"+
+    "<table id='fruits'>"+
+      "<tr>"+
+        "<th>ID"+
+        "</th>"+
+        "<th>Type"+
+        "</th>"+
+      "</tr>"+
+      "<tr>"+
+        "<td class='alert'>1"+
+        "</td>"+
+        "<td>Apple"+
+        "</td>"+
+      "</tr>"+
+      "<tr>"+
+        "<td class='alert'>2"+
+        "</td>"+
+        "<td>Pear"+
+        "</td>"+
+      "</tr>"+
+      "<tr>"+
+        "<td class='alert'>3"+
+        "</td>"+
+        "<td>Strawberry"+
+        "</td>"+
+      "</tr>"+
+      "<tr>"+
+        "<td class='alert'>4"+
+        "</td>"+
+        "<td>Pineapple"+
+        "</td>"+
+      "</tr>"+
+      "<tr>"+
+        "<td class='alert'>5"+
+        "</td>"+
+        "<td>Plum"+
+        "</td>"+
+      "</tr>"+
+    "</table>"
+
+
+//jquery based alert
+  $(document).ready(function(){
+    $(".alert").click(function(){
+      var fruitId = $(this).text();
+        var fruitType = $(this).closest("td").next().text();
+          alert("{Fruit ID: " + fruitId + ", Fruit Type: " + fruitType + "}");
+  });
+});
+</script>
+
+</body>
+</html>
