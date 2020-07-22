@@ -1,0 +1,119 @@
+<!--
+============================================
+; Title: assignment 8.4
+; Author: Tiffany Baker
+; Date:7/19/2020
+; Modified By:
+; Description:program demonsrates the use of jquery.
+;
+;===========================================
+-->
+
+<script>
+
+const header = require('../baker-header.js');
+
+console.log(header.display("Tiffany", "Baker", "assignment"));
+console.log("");
+
+</script>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+ <link rel="stylesheet" href="C:/Users/TiDel/bu-webdev/web-231/site.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <style>
+    #newTable {
+        border: 1px, solid, black;
+
+    }
+    #newTable th {
+        background-color: blue;
+        color: white;
+    }
+
+    #newTable td, #newTable th {
+
+        padding: 8px;
+    }
+
+    #newTable tr:nth-child(odd){background-color: lightblue;
+    }
+
+    #newTable tr:hover {
+        background-color: #ffff99;
+        cursor: pointer;
+
+}
+
+  </style>
+</head>
+<body>
+
+
+<button id="empTable">Employee Listing</button>
+<br />
+<div id="parentHolder"></div>
+
+<script>
+
+
+//variables
+$(document).ready(function(){
+ var employee = [];
+
+     employee.push(['Title', 'Last Name', 'First Name','Employee ID']);
+     employee.push(['245','Eric','Berk','Construction Worker']);
+     employee.push(['246','Joan','Smith','Designer']);
+     employee.push(['247','Tracy','Jones','Security']);
+     employee.push(['248','Mark','Mitchell','Bartender']);
+     employee.push(['249','Tim','Nicky','Host']);
+
+//creates table
+$("#empTable").on('click', function (e) {
+    e.preventDefault();
+    var parentDiv = $("#parentHolder");
+    parentDiv.html("");
+    var aTable = $("<table>", {
+        "id": "newTable"
+    }).appendTo(parentDiv);
+    var rowCount = employee.length;
+    var colmCount = employee[0].length;
+
+    // For loop for  header
+    for (var k = 0; k < 1; k++) {
+        var fragTrow = $("<tr>", {
+            "class": "trClass"
+        }).appendTo(aTable);
+        for (var j = 0; j < colmCount; j++) {
+            $("<th>", {
+                "class": "thClass"
+            }).prependTo(fragTrow).html(employee[k][j]);
+        }
+    }
+
+   //loop for adding to table
+    for (var i = 1; i < rowCount; i < i++) {
+        var fragTrow = $("<tr>", {
+            "class": "trClass"
+        }).appendTo(aTable);
+        for (var j = 0; j < colmCount; j++) {
+            $("<td>", {
+                "class": "tdClass"
+            }).appendTo(fragTrow).html(employee[i][j]);
+        }
+    }
+});
+});
+
+</script>
+
+
+</body>
+</html>
+
+
